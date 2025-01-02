@@ -24,6 +24,7 @@ public class RopeAcion : MonoBehaviour
     [SerializeField] private Sprite baseSprite;
     [SerializeField] private Sprite aimedSprite;
 
+    Vector3 newVec;
     Transform mainTr;
 
     RaycastHit hit;
@@ -47,10 +48,10 @@ public class RopeAcion : MonoBehaviour
     {
         FindObstacle();
         checkSwingAction();
-
+        newVec = new Vector3(transform.position.x, transform.position.y + 1f, transform.position.z);
         if (isStarted && lr.positionCount == 2)
         {
-            lr.SetPosition(0, transform.position);
+            lr.SetPosition(0, newVec);
             lr.SetPosition(1, targetTransform.position);
         }
 
@@ -76,6 +77,8 @@ public class RopeAcion : MonoBehaviour
     void StartSwing()
     {
         if (hit.point == Vector3.zero) return;
+
+        Debug.Log("Start");
 
         lr.positionCount = 2;
 

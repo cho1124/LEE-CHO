@@ -309,6 +309,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1468120101}
+    - targetCorrespondingSourceObject: {fileID: 5393215578589016642, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 735159694}
+    - targetCorrespondingSourceObject: {fileID: 5393215578589016642, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 735159693}
   m_SourcePrefab: {fileID: 100100000, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
 --- !u!4 &678527112 stripped
 Transform:
@@ -316,6 +324,63 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 678527111}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &735159688 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5393215578589016642, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
+    type: 3}
+  m_PrefabInstance: {fileID: 678527111}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &735159693
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735159688}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
+--- !u!114 &735159694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735159688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ba3978b2c11ee94990536ed6cbd6249, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  springForce: 52.8
+  springDamper: 10
+  springMass: 10
+  isPressed: 0
+  isStarted: 0
+  myLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  ToggleImage: {fileID: 984049250}
+  isAvailable: 0
+  baseSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  aimedSprite: {fileID: 21300000, guid: ff7bfa7addf40784d86f62b8e4a034a6, type: 3}
 --- !u!1 &984049248
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,14 +874,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1468120094}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ba3978b2c11ee94990536ed6cbd6249, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  springForce: 1
-  springDamper: 1
-  springMass: 1
+  springForce: 52.8
+  springDamper: 10
+  springMass: 10
   isPressed: 0
   isStarted: 0
   myLayer:
@@ -960,7 +1025,7 @@ PrefabInstance:
     - target: {fileID: 2659463134686901328, guid: 354385a0397e07f4bb1231c0c7632d2a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4
+      value: 8.92
       objectReference: {fileID: 0}
     - target: {fileID: 2659463134686901328, guid: 354385a0397e07f4bb1231c0c7632d2a,
         type: 3}
